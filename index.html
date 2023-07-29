@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <main>
+    <section class="pricing-section">
+      <div class="even-columns mobile">
+        <p class="views-text"><span id="views">100</span>K Pageviews</p>
+        <div class="slider-contanier mobile">
+          <input class="price" type="range" name="price" min="0" max="32" value="16">
+        </div>
+        <p class="price-text"><span id="dollars">$16.00</span> / month</p>
+      </div>
+      <div class="slider-contanier desktop">
+        <input class="price" type="range" name="price" min="0" max="32" value="16">
+      </div>
+      <div class="billing">
+        <p>Monthly Billing</p>
+        <div class="switch"></div>
+        <p class="yearly" data-text="25% discount">Yearly Billing</p>
+      </div>
+    </section>
+    <section class="even-columns info-section">
+      <div class="items">
+        <div>
+          <img src="images/icon-check.svg" alt="">
+          <p>Unlimited websites</p>
+        </div>
+        <div>
+          <img src="images/icon-check.svg" alt="">
+          <p>100% data ownership</p>
+        </div>
+        <div>
+          <img src="images/icon-check.svg" alt="">
+          <p>Email reports</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="button" class="button">Start my trial</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/EmrePW">EmrePW</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
